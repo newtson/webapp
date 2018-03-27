@@ -4,7 +4,6 @@
     overflow: hidden;
     width: 100%;
     display: flex;
-    /*flex-flow: row | nowrap;*/
     flex-flow: row | wrap;
     justify-content: space-evenly;
     background-color: white;
@@ -20,32 +19,31 @@
 }
 
 .material-icons {
-    /*width: 100%;*/
     padding-left: 40%;
 }
 
 .icon-text {
-    /*width: 100%;*/
-    padding-left: 46%;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 47%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 .icon-om {
-    /*width: 100%;*/
-    padding-left: 41%;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding-left: 41.5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 .icon-redovisning {
-    /*width: 100%;*/
     padding-left: 18%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 .icon-github {
-    /*width: 100%;*/
     padding-left: 27%;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
 }
 
 .active {
@@ -54,9 +52,9 @@
 
 .greet {
     position: fixed;
-    margin-top: 14%;
+    margin-top: 5%;
     padding-left: 2.5%;
-    width: 45%;
+    width: 46%;
     z-index: 1;
 }
 
@@ -66,14 +64,14 @@ html {
 
 h1 {
     font-size: 2.4rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 0.6rem;
-    font-size: 2.0rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4 {
@@ -81,7 +79,7 @@ h4 {
     margin-top: 1.8rem;
     line-height: 1.4;
     font-size: 1.4rem;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h4:first-of-type {
@@ -90,9 +88,9 @@ h4:first-of-type {
 
 p {
     margin-top: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.4;
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .ominfo {
@@ -104,7 +102,7 @@ p {
     color: blue;
     margin-top: 0.2rem;
     line-height: 1.4;
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .k1 {
@@ -119,10 +117,11 @@ p {
     padding-left: 1.4%;
     padding-bottom: 1%;
     text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
 
 .answer {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     width: 89%;
     padding-left: 5%;
     text-align: justify;

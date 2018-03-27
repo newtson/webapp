@@ -10,8 +10,10 @@ var home = (function () {
         title.textContent = "Marie";
 
         var greeting = document.createElement("p");
+
         greeting.className = "greet";
         var timeOfDayGreeting = "Hej";
+
         var now = new Date();
 
         if (now.getHours() <= 10) {
@@ -20,7 +22,8 @@ var home = (function () {
             timeOfDayGreeting = "God kväll";
         }
 
-        greeting.textContent = timeOfDayGreeting + ", jag heter Marie och är student i kursen webbapplikationer för mobila enheter vårterminen 2018.";
+        greeting.textContent = timeOfDayGreeting + ", jag heter Marie och är student" +
+        " i kursen webbapplikationer för mobila enheter vårterminen 2018.";
 
         window.mainContainer.appendChild(title);
         window.mainContainer.appendChild(greeting);
@@ -34,12 +37,10 @@ var home = (function () {
 
         window.rootElement.appendChild(window.mainContainer);
 
-        menu.showMenu("home");
-
+        window.menu.showMenu("home");
     };
 
     return {
         showHome: showHome
     };
-
 })(home);

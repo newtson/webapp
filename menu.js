@@ -4,17 +4,17 @@ var menu = (function () {
     var showMenu = function (classElement) {
         window.navigation.innerHTML = "";
 
-        var navElements = [{name: "Me", class: "home", nav: home.showHome},
-                         {name: "Om", class: "free_breakfast", nav: about.showAbout},
-                        {name: "Github", class: "folder", nav: github.showGithub},
-                        {name: "Redovisning", class: "people", nav: presentation.showPresentation}];
+        var navElements = [{name: "Me", class: "home", nav: window.home.showHome},
+            {name: "Om", class: "free_breakfast", nav: window.about.showAbout},
+            {name: "Github", class: "folder", nav: window.github.showGithub},
+            {name: "Redovisning", class: "people", nav: window.presentation.showPresentation}];
 
         navElements.forEach(function (element) {
             var navElement = document.createElement("a");
 
             if (classElement === element.class) {
-                  navElement.className = "active";
-             }
+                navElement.className = "active";
+            }
 
             navElement.addEventListener("click", element.nav);
 
@@ -43,15 +43,12 @@ var menu = (function () {
             navElement.appendChild(text);
 
             window.navigation.appendChild(navElement);
-
-
         });
 
-            window.rootElement.appendChild(window.navigation);
+        window.rootElement.appendChild(window.navigation);
     };
 
     return {
         showMenu: showMenu
     };
-
-})();
+})(menu);

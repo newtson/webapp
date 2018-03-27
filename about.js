@@ -2,42 +2,41 @@
 
 var about = (function () {
     var showAbout = function () {
-    window.mainContainer.innerHTML = "";
+        window.mainContainer.innerHTML = "";
 
-    var about = document.createElement("h1");
+        var about = document.createElement("h1");
 
-    about.className = "about";
-    about.textContent = "Om";
+        about.className = "about";
+        about.textContent = "Om";
 
-    var omInfo = document.createElement("p");
+        var omInfo = document.createElement("p");
 
-    omInfo.className = "ominfo";
-    omInfo.innerHTML = "Den här appen är till kursen webbapplikationer för mobila enheter.";
+        omInfo.className = "ominfo";
+        omInfo.innerHTML = "Den här appen är till kursen webbapplikationer för mobila enheter.";
 
-    window.mainContainer.appendChild(about);
-    window.mainContainer.appendChild(omInfo);
+        window.mainContainer.appendChild(about);
+        window.mainContainer.appendChild(omInfo);
 
-    var image = document.createElement("img");
+        var image = document.createElement("img");
 
-    image.src = "phones.jpg";
-    image.alt = "Alternativ bild";
+        image.src = "phones.jpg";
+        image.alt = "Alternativ bild";
 
-    window.mainContainer.appendChild(image);
+        window.mainContainer.appendChild(image);
 
-    var imageR = document.createElement("img");
+        var imageR = document.createElement("img");
 
-    imageR.src = "phones.jpg";
-    imageR.alt = "Alternativ bild";
+        imageR.src = "phones.jpg";
+        imageR.alt = "Alternativ bild";
 
-    window.mainContainer.appendChild(imageR);
+        window.mainContainer.appendChild(imageR);
 
-    window.rootElement.appendChild(window.mainContainer);
+        window.rootElement.appendChild(window.mainContainer);
 
-    menu.showMenu("free_breakfast");
+        window.menu.showMenu("free_breakfast");
     };
 
     return {
         showAbout: showAbout
     };
-
-})();
+})(about);
