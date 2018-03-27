@@ -20,7 +20,7 @@ var home = (function () {
             timeOfDayGreeting = "God kväll";
         }
 
-        greeting.textContent = timeOfDayGreeting + ", jag heter Marie och är student i kursen webapplikationer för mobila enheter vårterminen 2018.";
+        greeting.textContent = timeOfDayGreeting + ", jag heter Marie och är student i kursen webbapplikationer för mobila enheter vårterminen 2018.";
 
         window.mainContainer.appendChild(title);
         window.mainContainer.appendChild(greeting);
@@ -30,19 +30,13 @@ var home = (function () {
         image.src = "merep.png";
         image.alt = "Alternativ bild";
 
-        mainContainer.appendChild(image);
+        window.mainContainer.appendChild(image);
 
         window.rootElement.appendChild(window.mainContainer);
 
         menu.showMenu("home");
 
-        //menu.showMenu("home");
-        //home.showHome();
-        //menu.showMenu();
-
     };
-
-
 
     return {
         showHome: showHome

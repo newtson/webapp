@@ -9,9 +9,5 @@
     window.navigation = document.createElement("nav");
     window.navigation.className = "bottom-nav";
 
-    /*window.title = document.createElement("h1");
-    window.title.className = "title";*/
-
-    //home.showHome("home");
     home.showHome();
 })();
